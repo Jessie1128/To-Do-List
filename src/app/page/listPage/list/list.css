@@ -1,0 +1,41 @@
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+
+.input-input{
+    height:30px;
+    padding:2px;
+    padding-left:20px;
+    width:300px;
+    border:#ffffff 1px solid;
+    border-bottom:#344648 2px solid;
+}
+
+.input-input:focus{
+    outline: none;
+}
+
+.input-button{
+    width:60px;
+    height:35px;
+    margin-left: 10px;
+    color:#ffffff;
+    border-radius: 5px;
+    background-color: #344648;
+    border:#344648 2px solid;
+    font-size: 16px;
+}
+
+.input-button:hover { 
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.hr{
+    margin-top:50px;
+    height:1px;
+    background:#344648;
+}

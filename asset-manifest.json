@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Jessie1128/To-Do-List.git/static/css/main.5d8a7062.css",
+    "main.js": "/Jessie1128/To-Do-List.git/static/js/main.e1f07dd5.js",
+    "index.html": "/Jessie1128/To-Do-List.git/index.html",
+    "main.5d8a7062.css.map": "/Jessie1128/To-Do-List.git/static/css/main.5d8a7062.css.map",
+    "main.e1f07dd5.js.map": "/Jessie1128/To-Do-List.git/static/js/main.e1f07dd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d8a7062.css",
+    "static/js/main.e1f07dd5.js"
+  ]
+}

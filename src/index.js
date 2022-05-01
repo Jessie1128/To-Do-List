@@ -2,10 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
 import './index.css';
-// import './app/page/homePage/homePage.css'
-// import './app/page/base.css'
-// import './app/page/listPage/addForm/addForm.css'
-// import './app/page/listPage/list/list.css'
 import App from './app/app';
 import {initializeApp} from 'firebase/app'
 
@@ -28,4 +24,3 @@ root.render(
 // };
 
 // initializeApp(firebaseConfig)
-// reportWebVitals();

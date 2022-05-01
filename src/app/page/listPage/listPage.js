@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { v4 } from 'uuid'
-import List from './list/list'
 import AddForm from './addForm/addForm'
 import '../base.css'
 import './list/list.css'
 import '../homePage/homePage.css' //for back to home page botton 
 import * as React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 
 const ListPage = () => {
     const [ info , setInfo ] = useState("")
@@ -28,10 +28,6 @@ const ListPage = () => {
         })
     }
 
-    function to_home_page () {
-        window.location.href='/';
-    }
-
     return <div>
             <div className="input">
             <input value={info} onChange={changeInfo} className="input-input" placeholder="輸入一些文字吧" type="text"></input>
@@ -39,14 +35,9 @@ const ListPage = () => {
         </div>
         <hr className="hr"/>
         <AddForm data={data} deleteData={setData}/>
-        {/* <Item data={info}/> */}
-        {/* <List /> */}
-        {/* <nav className="to_next_page"> 
+        <nav className="to_next_page"> 
             <Link to="/" className="button">返回首頁</Link>
-        </nav> */}
-        <div className="to_next_page">
-            <div className="button" onClick={to_home_page}>返回首頁</div>
-        </div>
+        </nav>
     </div>
 }
 

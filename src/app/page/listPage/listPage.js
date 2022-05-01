@@ -5,6 +5,7 @@ import AddForm from './addForm/addForm'
 import '../base.css'
 import './list/list.css'
 import '../homePage/homePage.css' //for back to home page botton 
+import * as React from "react";
 
 const ListPage = () => {
     const [ info , setInfo ] = useState("")
@@ -40,6 +41,9 @@ const ListPage = () => {
         <AddForm data={data} deleteData={setData}/>
         {/* <Item data={info}/> */}
         {/* <List /> */}
+        {/* <nav className="to_next_page"> 
+            <Link to="/" className="button">返回首頁</Link>
+        </nav> */}
         <div className="to_next_page">
             <div className="button" onClick={to_home_page}>返回首頁</div>
         </div>

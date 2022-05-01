@@ -13,9 +13,9 @@ const HomePage = () => {
         <div className="to_next_page">
             <div className="button" onClick={to_list_page}>點此開始</div>
         </div>
-        {/* <div className="to_next_page"> 
+        {/* <nav className="to_next_page"> 
             <Link to="/list" className="button">點此開始</Link>
-        </div> */}
+        </nav> */}
     </div>
 }
 

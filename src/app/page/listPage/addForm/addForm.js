@@ -1,25 +1,25 @@
-import { useState } from 'react'
 import * as React from "react";
 import './addForm.css'
 import List from '../list/list'
 
-const AddForm = ( {data , deleteData }) => {
-    // const [add,setAdd] = useState('')
+const AddForm = ( { data , deleteData }) => {
     console.log("deleteData",deleteData);
-    return <div className="add_form">
-        {
-            data.map((elem)=>{
-                // console.log("elem",elem);
-                // const note=elem.info
-                return <List 
-                        id={elem.id} 
-                        key={elem.id}
-                        note={elem.info} 
-                        deleteDatt={deleteData}
-                       />
-            })
-        }
-    </div>
+    console.log("我要看這邊",data)
+    return (
+        <div className="add_form">
+            {
+                data.map((elem)=>{
+                    console.log("我看看會不會跑")
+                    return <List 
+                            id={elem.id} 
+                            key={elem.id}
+                            note={elem.info} 
+                            deleteDate={deleteData}
+                        />
+                })
+            }
+        </div>
+    )
 }
 
 export default AddForm

@@ -1,10 +1,21 @@
 import * as React from "react";
+import { db } from "../../../connection"
+import { doc , deleteDoc } from "firebase/firestore";
 
-const List = ({ note, id, deleteDatt }) => {
-    function remove () {
-        deleteDatt(function(prev){
+const List = ({ note, id, deleteDate }) => {
+    async function delete_data_from_firsbase () {
+        try{
+            await deleteDoc(doc(db, "test", id));
+            console.log("刪除成功");
+        }catch( error ){
+            console.error(`error:${error}`);
+        }
+    }
+
+    async function remove () {
+        await delete_data_from_firsbase();
+        deleteDate(function(prev){
             console.log(prev);
-            // return ["c8 c8 c8 "]
             return prev.filter((item)=>{ return item.id!==id})
         })
     }

@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-family: 微軟正黑體 !important;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 ol, ul {
 	list-style: none;

@@ -1,7 +1,7 @@
 import '../base.css'
 import './homePage.css'
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return <div>

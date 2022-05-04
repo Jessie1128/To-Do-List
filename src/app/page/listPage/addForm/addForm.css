@@ -13,11 +13,11 @@
 .add_form_block{
     display:flex;
     align-items: center;
-    /* font-size: 24px; */
     height:30px;
     padding:2px;
     padding-left:20px;
     width:302px;
+    font-size: 16px;
     border-bottom:#7D8E95 2px solid;
 }
 

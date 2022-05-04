@@ -3,6 +3,8 @@ import { db } from "../../../connection"
 import { doc , deleteDoc } from "firebase/firestore";
 
 const List = ({ note, id, deleteDate }) => {
+    console.log(process.env)
+    console.log(process.env.REACT_APP_apiKey)
     async function delete_data_from_firsbase () {
         try{
             await deleteDoc(doc(db, "test", id));
